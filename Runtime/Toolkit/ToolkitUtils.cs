@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Watona.Utils;
+
 namespace Watona.Utils.Toolkit
 {
     public static class ToolkitUtils
@@ -19,7 +20,7 @@ namespace Watona.Utils.Toolkit
         {
             Vector2 newPosition = RuntimePanelUtils.CameraTransformWorldToPanel(bar.panel, transformToFollow.position, mainCamera);
             
-            bar.transform.position = newPosition.WithNewX(newPosition.x = bar.layout.widht / 2);
+            bar.transform.position = newPosition.WithNewX(newPosition.x = bar.layout.width / 2);
         }
     }
 }
