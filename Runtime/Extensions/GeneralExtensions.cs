@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Watona.Utils
+namespace Watona.Utils.Extensions
 {
     public static class GeneralExtensions
     {
