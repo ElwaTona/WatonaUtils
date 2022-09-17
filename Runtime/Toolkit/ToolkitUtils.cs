@@ -8,7 +8,7 @@ namespace Watona.Utils
 {
     public static class ToolkitUtils
     {
-        public static void ChangeFiller(VisualElement filler, float current, float max)
+        public static VisualElement ChangeFiller(VisualElement filler, float current, float max)
         {
             float percentage = (current/max) * 100;
             if (percentage > 100)
@@ -16,7 +16,7 @@ namespace Watona.Utils
             filler.style.width = new StyleLength(Length.Percent(percentage));
         }
 
-        public static void SetPosition(VisualElement bar, Transform transformToFollow, Camera mainCamera)
+        public static VisualElement SetPosition(VisualElement bar, Transform transformToFollow, Camera mainCamera)
         {
             Vector2 newPosition = RuntimePanelUtils.CameraTransformWorldToPanel(bar.panel, transformToFollow.position, mainCamera);
 
