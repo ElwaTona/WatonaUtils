@@ -18,7 +18,7 @@ namespace Watona.Utils.Toolkit
         public static void SetPosition(VisualElement bar, Transform transformToFollow, Camera mainCamera)
         {
             Vector2 newPosition = RuntimePanelUtils.CameraTransformWorldToPanel(bar.panel, transformToFollow.position, mainCamera);
-
+            
             bar.transform.position = newPosition.WithNewX(newPosition.x = bar.layout.widht / 2);
         }
     }
