@@ -14,6 +14,8 @@ namespace Watona.Utils
             if (percentage > 100)
                 percentage = 100;
             filler.style.width = new StyleLength(Length.Percent(percentage));
+            return filler;
+
         }
 
         public static VisualElement SetPosition(this VisualElement bar, Transform transformToFollow, Camera mainCamera)
@@ -21,6 +23,7 @@ namespace Watona.Utils
             Vector2 newPosition = RuntimePanelUtils.CameraTransformWorldToPanel(bar.panel, transformToFollow.position, mainCamera);
 
             bar.transform.position = newPosition.WithNewX(newPosition.x - bar.layout.width / 2);
+            return bar;
         }
     }
 }
