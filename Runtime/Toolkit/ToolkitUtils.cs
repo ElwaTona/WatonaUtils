@@ -20,7 +20,7 @@ namespace Watona.Utils
         {
             Vector2 newPosition = RuntimePanelUtils.CameraTransformWorldToPanel(bar.panel, transformToFollow.position, mainCamera);
 
-            bar.transform.position = newPosition.WithNewX(newPosition.x = bar.layout.width / 2);
+            bar.transform.position = newPosition.WithNewX(newPosition.x - bar.layout.width / 2);
         }
     }
 }
