@@ -12,11 +12,11 @@ namespace Watona.Utils.Variables
     [CreateAssetMenu]
     public class FloatVariable : ScriptableObject
     {
+        public float Value;
 #if UNITY_EDITOR
-        [Multiline]
+        [TextArea]
         public string DeveloperDescription = "";
 #endif
-        public float Value;
 
         public void SetValue(float value)
         {
