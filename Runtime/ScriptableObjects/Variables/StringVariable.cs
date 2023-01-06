@@ -14,6 +14,10 @@ namespace Watona.Utils.Variables
     {
         [SerializeField]
         private string value = "";
+#if UNITY_EDITOR
+        [TextArea]
+        public string DeveloperDescription = "";
+#endif
 
         public string Value
         {
