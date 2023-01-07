@@ -1,4 +1,4 @@
-﻿// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 // Unite 2017 - Game Architecture with Scriptable Objects
 // 
 // Author: Ryan Hipple
@@ -9,31 +9,31 @@ using UnityEngine;
 
 namespace Watona.Utils.Variables
 {
-    [CreateAssetMenu(menuName = "Variable/Float")]
-    public class FloatVariable : ScriptableObject
+    [CreateAssetMenu(menuName = "Variable/Int")]
+    public class IntVariable : ScriptableObject
     {
-        public float Value;
+        public int Value;
 #if UNITY_EDITOR
         [TextArea]
         public string DeveloperDescription = "";
 #endif
 
-        public void SetValue(float value)
+        public void SetValue(int value)
         {
             Value = value;
         }
 
-        public void SetValue(FloatVariable value)
+        public void SetValue(IntVariable value)
         {
             Value = value.Value;
         }
 
-        public void ApplyChange(float amount)
+        public void ApplyChange(int amount)
         {
             Value += amount;
         }
 
-        public void ApplyChange(FloatVariable amount)
+        public void ApplyChange(IntVariable amount)
         {
             Value += amount.Value;
         }

@@ -9,10 +9,10 @@ using UnityEngine;
 
 namespace Watona.Utils.Variables
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(menuName = "Variable/String")]
     public class StringVariable : ScriptableObject
     {
-        [SerializeField]
+        [SerializeField, TextArea]
         private string value = "";
 #if UNITY_EDITOR
         [TextArea]

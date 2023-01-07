@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Watona.Utils.Variables
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(menuName = "Variable/Boolean")]
     public class BooleanVariable : ScriptableObject
     {
         [SerializeField]

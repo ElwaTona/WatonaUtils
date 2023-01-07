@@ -11,7 +11,7 @@ using Watona.Utils.Variables;
 
 namespace Watona.Utils.SO
 {
-    [CustomPropertyDrawer(typeof(FloatReference))]
+    [CustomPropertyDrawer(typeof(FloatReference)), CustomPropertyDrawer(typeof(BooleanReference)), CustomPropertyDrawer(typeof(StringReference)), CustomPropertyDrawer(typeof(IntReference))]
     public class FloatReferenceDrawer : PropertyDrawer
     {
         /// <summary>
