@@ -6,34 +6,19 @@ using Watona.Events;
 
 namespace Watona.WatonaEditor
 {
-    public abstract class GameEventEditor<T> : Editor
+    public abstract class GameEventEditor<TParameter> : Editor
     {
-        public T Arguments;
-        public SerializedObject SerializedObject;
-        public SerializedProperty ArgumentProperty;
-        public void OnEnable()
-        {
-            SerializedObject = new SerializedObject(this);
-        }
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            GUI.enabled = true;
+            GUI.enabled = Application.isPlaying;
 
-            EditorGUI.BeginChangeCheck();
-            ArgumentProperty = SerializedObject.FindProperty("Arguments");
-            Debug.Log(ArgumentProperty.editable);
-
-            EditorGUILayout.PropertyField(ArgumentProperty);
-
-            BaseGameEvent<T> e = target as BaseGameEvent<T>;
+            BaseGameEvent<TParameter> e = target as BaseGameEvent<TParameter>;
 
             if(GUILayout.Button("Raise"))
             {
-                e.Raise(Arguments);
+                e.Raise(e.Parameter);
             }
-
-            SerializedObject.ApplyModifiedProperties();
         }
     }
 }

@@ -3,9 +3,9 @@ using UnityEngine.Events;
 
 namespace Watona.Events
 {
-    public interface IEventListener<T>
+    public interface IEventListener<TParameter>
     {
-        void RaiseEvent(T parameter);
+        void RaiseEvent(TParameter parameter);
     }
     public abstract class BaseGameEventListener<TParameter, TGameEvent, TUnityEvent> : MonoBehaviour, IEventListener<TParameter>
         where TGameEvent : BaseGameEvent<TParameter>
