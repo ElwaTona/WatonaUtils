@@ -5,13 +5,16 @@ namespace Watona.Events
 {
     public abstract class BaseGameEvent<TParameter> : ScriptableObject
     {
+        public TParameter Parameter => _parameter;
+        [SerializeField] private TParameter _parameter;
         [SerializeField] private List<IEventListener<TParameter>> _listeners = new List<IEventListener<TParameter>>();
     
-        public void Raise(TParameter t)
+        public void Raise(TParameter parameter)
         {
+            _parameter = parameter;
             for (int i = _listeners.Count - 1; i >= 0; i--)
             {
-                _listeners[i].RaiseEvent(t);
+                _listeners[i].RaiseEvent(_parameter);
             }
         }
         public void RegisterListener(IEventListener<TParameter> listener)

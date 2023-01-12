@@ -1,13 +1,8 @@
 {
-    "name": "com.watona.utils.Editor",
-    "rootNamespace": "Watona.Utils",
-    "references": [
-        "com.watona.utils.Runtime",
-        "Unity.EditorCoroutines.Editor"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "name": "com.watona.tools.Runtime",
+    "rootNamespace": "Watona",
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
