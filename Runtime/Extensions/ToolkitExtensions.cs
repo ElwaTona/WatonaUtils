@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Watona.Utils.Extensions
+namespace Watona.Utils
 {
     public static class ToolkitExtensions
     {

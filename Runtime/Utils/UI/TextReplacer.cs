@@ -7,8 +7,9 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using Watona.Variables;
 
-namespace Watona.Utils.Variables
+namespace Watona.Utils
 {
     public class TextReplacer : MonoBehaviour
     {

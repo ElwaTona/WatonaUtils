@@ -7,8 +7,9 @@
 
 using UnityEngine;
 using UnityEngine.Audio;
+using Watona.Variables;
 
-namespace Watona.Utils.Variables
+namespace Watona.Utils
 {
     /// <summary>
     /// Takes a FloatVariable and sends a curve filtered version of its value 

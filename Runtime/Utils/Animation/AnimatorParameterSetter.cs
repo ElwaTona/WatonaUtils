@@ -6,8 +6,9 @@
 // ----------------------------------------------------------------------------
 
 using UnityEngine;
+using Watona.Variables;
 
-namespace Watona.Utils.Variables
+namespace Watona.Utils
 {
     /// <summary>
     /// Takes a FloatVariable and sends its value to an Animator parameter 

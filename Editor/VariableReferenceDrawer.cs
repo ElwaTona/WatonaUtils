@@ -7,12 +7,12 @@
 
 using UnityEditor;
 using UnityEngine;
-using Watona.Utils.Variables;
+using Watona.Variables;
 
-namespace Watona.Utils.SO
+namespace Watona.WatonaEditor
 {
     [CustomPropertyDrawer(typeof(FloatReference)), CustomPropertyDrawer(typeof(BooleanReference)), CustomPropertyDrawer(typeof(StringReference)), CustomPropertyDrawer(typeof(IntReference))]
-    public class FloatReferenceDrawer : PropertyDrawer
+    public class VariableReferenceDrawer : PropertyDrawer
     {
         /// <summary>
         /// Options to display in the popup to select constant or variable.

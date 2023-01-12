@@ -7,9 +7,9 @@
 
 using UnityEditor;
 using UnityEngine;
-using Watona.Utils.Events;
+using Watona.Events;
 
-namespace Watona.Utils.SO
+namespace Watona.WatonaEditor
 {
     [CustomEditor(typeof(GameEvent), editorForChildClasses: true)]
     public class EventEditor : Editor

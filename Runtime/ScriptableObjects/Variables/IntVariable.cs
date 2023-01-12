@@ -7,7 +7,7 @@
 
 using UnityEngine;
 
-namespace Watona.Utils.Variables
+namespace Watona.Variables
 {
     [CreateAssetMenu(menuName = "Variable/Int")]
     public class IntVariable : ScriptableObject

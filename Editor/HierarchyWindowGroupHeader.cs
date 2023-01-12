@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-namespace Watona.Utils.SO
+namespace Watona.WatonaEditor
 {
 /// <summary>
 /// Hierarchy Window Group Header

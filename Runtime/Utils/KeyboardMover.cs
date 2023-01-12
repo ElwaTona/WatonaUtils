@@ -7,8 +7,9 @@
 
 using System;
 using UnityEngine;
+using Watona.Variables;
 
-namespace Watona.Utils.Variables
+namespace Watona.Utils
 {
     public class KeyboardMover : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 {
     "name": "com.watona.utils.Runtime",
-    "rootNamespace": "Watona.Utils",
+    "rootNamespace": "Watona",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

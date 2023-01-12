@@ -8,7 +8,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Watona.Utils.Events
+namespace Watona.Events
 {
     [CreateAssetMenu]
     public class GameEvent : ScriptableObject

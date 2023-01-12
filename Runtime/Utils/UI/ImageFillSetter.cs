@@ -7,8 +7,9 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using Watona.Variables;
 
-namespace Watona.Utils.Variables
+namespace Watona.Utils
 {
     /// <summary>
     /// Sets an Image component's fill amount to represent how far Variable is

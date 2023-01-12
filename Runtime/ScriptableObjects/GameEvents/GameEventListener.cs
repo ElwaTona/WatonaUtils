@@ -8,7 +8,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Watona.Utils.Events
+namespace Watona.Events
 {
     public class GameEventListener : MonoBehaviour
     {

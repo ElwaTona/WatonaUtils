@@ -7,7 +7,7 @@
 
 using System;
 
-namespace Watona.Utils.Variables
+namespace Watona.Variables
 {
     [Serializable]
     public class IntReference
