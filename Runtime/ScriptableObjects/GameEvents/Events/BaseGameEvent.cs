@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Watona.Events
 {
-    public abstract class BaseGameEvent<TParameter> : ScriptableObject
+    public class BaseGameEvent<TParameter> : ScriptableObject
     {
         public TParameter Parameter => _parameter;
         [SerializeField] private TParameter _parameter;
@@ -16,6 +16,7 @@ namespace Watona.Events
             {
                 _listeners[i].RaiseEvent(_parameter);
             }
+            Debug.Log(parameter);
         }
         public void RegisterListener(IEventListener<TParameter> listener)
         {

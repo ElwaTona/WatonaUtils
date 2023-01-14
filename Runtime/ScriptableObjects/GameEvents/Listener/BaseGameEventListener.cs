@@ -11,7 +11,10 @@ namespace Watona.Events
         where TGameEvent : BaseGameEvent<TParameter>
         where TUnityEvent : UnityEvent<TParameter>
     {
+        [Tooltip("Event to register with.")]
         public TGameEvent GameEvent;
+
+        [Tooltip("Response to invoke when Event is raised.")]
         public TUnityEvent Response;
     
         private void OnEnable()
@@ -24,9 +27,9 @@ namespace Watona.Events
             GameEvent.UnRegisterListener(this);
         }
     
-        public void RaiseEvent(TParameter t)
+        public void RaiseEvent(TParameter parameter)
         {
-            Response.Invoke(t);
+            Response.Invoke(parameter);
         }
     }
 }

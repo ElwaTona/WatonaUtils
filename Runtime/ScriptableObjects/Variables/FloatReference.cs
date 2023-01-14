@@ -16,8 +16,7 @@ namespace Watona.Variables
         public float ConstantValue;
         public FloatVariable Variable;
 
-        public FloatReference()
-        { }
+        public FloatReference() {}
 
         public FloatReference(float value)
         {

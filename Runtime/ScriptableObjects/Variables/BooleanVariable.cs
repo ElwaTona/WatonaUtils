@@ -10,19 +10,11 @@ using UnityEngine;
 namespace Watona.Variables
 {
     [CreateAssetMenu(menuName = "Variable/Boolean")]
-    public class BooleanVariable : ScriptableObject
+    public class BooleanVariable : Variable<bool> 
     {
-        [SerializeField]
-        private bool value;
-#if UNITY_EDITOR
-        [TextArea]
-        public string DeveloperDescription = "";
-#endif
-
-        public bool Value
+        public void Flip()
         {
-            get { return value; }
-            set { this.value = value; }
+            Value = !Value;
         }
     }
 }

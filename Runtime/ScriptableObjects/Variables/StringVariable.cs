@@ -1,28 +1,17 @@
-﻿// ----------------------------------------------------------------------------
-// Unite 2017 - Game Architecture with Scriptable Objects
-// 
-// Author: Ryan Hipple
-// Date:   10/04/17
-// ----------------------------------------------------------------------------
-
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Watona.Variables
 {
     [CreateAssetMenu(menuName = "Variable/String")]
-    public class StringVariable : ScriptableObject
+    public class StringVariable : Variable<string>
     {
-        [SerializeField, TextArea]
-        private string value = "";
-#if UNITY_EDITOR
-        [TextArea]
-        public string DeveloperDescription = "";
-#endif
-
-        public string Value
+        public void AddValue(string value)
         {
-            get { return value; }
-            set { this.value = value; }
+            Value += value;
+        }
+        public void AddValue(StringVariable variable)
+        {
+            Value += variable.Value;
         }
     }
 }

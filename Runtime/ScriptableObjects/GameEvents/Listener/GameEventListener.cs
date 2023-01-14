@@ -22,12 +22,10 @@ namespace Watona.Events
         {
             Event.RegisterListener(this);
         }
-
         private void OnDisable()
         {
             Event.UnregisterListener(this);
         }
-
         public void OnEventRaised()
         {
             Response.Invoke();
