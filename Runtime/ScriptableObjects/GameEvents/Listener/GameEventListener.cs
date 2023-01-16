@@ -10,7 +10,11 @@ using UnityEngine.Events;
 
 namespace Watona.Events
 {
-    public class GameEventListener : MonoBehaviour
+    public interface IEventListener
+    {
+        void OnEventRaised();
+    }
+    public class GameEventListener : MonoBehaviour, IEventListener
     {
         [Tooltip("Event to register with.")]
         public GameEvent Event;

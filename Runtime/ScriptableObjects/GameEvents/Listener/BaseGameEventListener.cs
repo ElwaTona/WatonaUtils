@@ -7,6 +7,7 @@ namespace Watona.Events
     {
         void RaiseEvent(TParameter parameter);
     }
+    [System.Serializable]
     public abstract class BaseGameEventListener<TParameter, TGameEvent, TUnityEvent> : MonoBehaviour, IEventListener<TParameter>
         where TGameEvent : BaseGameEvent<TParameter>
         where TUnityEvent : UnityEvent<TParameter>

@@ -16,19 +16,19 @@ namespace Watona.Events
         /// <summary>
         /// The list of listeners that this event will notify if it is raised.
         /// </summary>
-        private readonly List<GameEventListener> listeners = new List<GameEventListener>();
+        private readonly List<IEventListener> listeners = new List<IEventListener>();
 
         public void Raise()
         {
             for(int i = listeners.Count -1; i >= 0; i--) listeners[i].OnEventRaised();
         }
 
-        public void RegisterListener(GameEventListener listener)
+        public void RegisterListener(IEventListener listener)
         {
             if (!listeners.Contains(listener)) listeners.Add(listener);
         }
 
-        public void UnregisterListener(GameEventListener listener)
+        public void UnregisterListener(IEventListener listener)
         {
             if (listeners.Contains(listener)) listeners.Remove(listener);
         }

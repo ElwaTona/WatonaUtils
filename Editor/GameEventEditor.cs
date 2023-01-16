@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEditor;
 using Watona.Events;
+using Watona.Variables;
 
 namespace Watona.WatonaEditor
 {
+    [CustomEditor(typeof(BaseGameEvent<>))]
     public abstract class GameEventEditor<TParameter> : Editor
     {
         public override void OnInspectorGUI()
