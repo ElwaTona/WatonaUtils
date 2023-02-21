@@ -13,5 +13,14 @@ namespace Watona.Variables
         {
             Value += variable.Value;
         }
+
+        public void AddValueWithoutNotify(string value)
+        {
+            this.value += value;
+        }
+        public void AddValueWithoutNotify(StringVariable variable)
+        {
+            this.value += variable.Value;
+        }
     }
 }

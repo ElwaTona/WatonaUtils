@@ -9,10 +9,18 @@ namespace Watona.Variables
         {
             Value += amount;
         }
-
         public void ApplyChange(IntVariable amount)
         {
             Value += amount.Value;
+        }
+
+        public void ApplyChangeWithoutNotify(int amount)
+        {
+            this.value += amount;
+        }
+        public void ApplyChangeWithoutNotify(IntVariable amount)
+        {
+            this.value += amount.Value;
         }
     }
 }

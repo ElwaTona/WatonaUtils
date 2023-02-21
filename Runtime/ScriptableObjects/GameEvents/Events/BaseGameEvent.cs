@@ -16,7 +16,6 @@ namespace Watona.Events
             {
                 _listeners[i].RaiseEvent(_parameter);
             }
-            Debug.Log(parameter);
         }
         public void RegisterListener(IEventListener<TParameter> listener)
         {

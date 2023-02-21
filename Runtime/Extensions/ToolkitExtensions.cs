@@ -21,5 +21,10 @@ namespace Watona.Utils
             filler.style.width = new StyleLength(Length.Percent(percentage));
             return filler;
         }
+        public static VisualElement SetVisibility(this VisualElement visualElement, bool value)
+        {
+            visualElement.style.display = value ? DisplayStyle.Flex : DisplayStyle.None;
+            return visualElement;
+        }
     }
 }

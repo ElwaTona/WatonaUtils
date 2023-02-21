@@ -14,7 +14,12 @@ namespace Watona.Variables
     {
         public void Flip()
         {
-            Value = !Value;
+            this.SetValue(!Value);
+        }
+        
+        public void FlipWithoutNotify()
+        {
+            this.SetValue(!Value);
         }
     }
 }
