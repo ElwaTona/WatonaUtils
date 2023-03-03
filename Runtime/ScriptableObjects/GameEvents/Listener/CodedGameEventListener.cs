@@ -5,7 +5,7 @@ using System;
 namespace Watona.Events
 {
     [Serializable]
-    public class CodedGameEventListener<T> : IEventListener<T> where T : struct
+    public class CodedGameEventListener<T> : IEventListener<T>
     {
         [SerializeField] private BaseGameEvent<T> @event;
         [SerializeField] private Action<T> Response;
