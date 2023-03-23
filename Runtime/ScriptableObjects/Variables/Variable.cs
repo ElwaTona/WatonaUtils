@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.ComponentModel;
 
 namespace Watona.Variables

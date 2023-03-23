@@ -1,19 +1,19 @@
 {
-  "name": "com.watona.tools",
-  "version": "1.2.2",
-  "displayName": "Watona Tools",
-  "description": "Multiple tools for runtime and editor",
-  "unity": "2021.3",
-  "keywords": [
-    "library",
-    "tools",
-    "utils",
-    "utility",
-    "watona"
-  ],
-  "author": {
-    "name": "Elwa Bazaes",
-    "email": "elwa.bazaesg@gmail.com"
-  },
-  "type": "library"
+    "name": "com.watona.tools",
+    "version": "1.2.3",
+    "displayName": "Watona Tools",
+    "description": "Multiple tools for runtime and editor",
+    "unity": "2021.3",
+    "keywords": [
+        "library",
+        "tools",
+        "utils",
+        "utility",
+        "watona"
+    ],
+    "author": {
+        "name": "Elwa Bazaes",
+        "email": "elwa.bazaesg@gmail.com"
+    },
+    "type": "library"
 }
